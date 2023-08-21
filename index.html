@@ -26,10 +26,10 @@
     >
       <img src="./images/giarddesign.svg" alt="gd-logo" />
       <ul class="hidden justify-between space-x-12 md:flex">
-        <li><a href="">Oferta</a></li>
-        <li><a href="">O firmie</a></li>
-        <li><a href="">Realizacje</a></li>
-        <li><a href="">Kontakt</a></li>
+        <li><a class="hover:text-green" href="#oferta">Oferta</a></li>
+        <li><a class="hover:text-green" href="#about">O firmie</a></li>
+        <li><a class="hover:text-green" href="#realisation">Realizacje</a></li>
+        <li><a class="hover:text-green" href="#contact">Kontakt</a></li>
         <li>
           <a href="">
             <img src="./images/lookingglass.svg" alt="Search" srcset="" />
@@ -39,10 +39,11 @@
       <!-- Mobile menu -->
       <div class="hidden mobile-menu">
         <ul>
-          <li class="m-1 text-2xl"><a href="">O firmie</a></li>
-          <li class="m-1 text-2xl"><a href="">Realizacje</a></li>
-          <li class="m-1 text-2xl"><a href="">Kontakt</a></li>
-          <li class="m-1 text-2xl"><a href="">Oferta</a></li>
+          <li class="m-1 text-2xl"><a href="#oferta">Oferta</a></li>
+          <li class="m-1 text-2xl"><a href="#about">O firmie</a></li>
+          <li class="m-1 text-2xl"><a href="#realisation">Realizacje</a></li>
+          <li class="m-1 text-2xl"><a href="#contact">Kontakt</a></li>
+
           <li class="m-1">
             <a href="">
               <img
@@ -74,7 +75,7 @@
     </header>
     <main class="mt-20">
       <!-- First block w/ picture and slider-->
-      <div class="flex-col md:flex md:flex-row">
+      <div class="flex-col md:flex md:flex-row" id="about">
         <div class="container max-w-none bg-pink py-8 md:py-36">
           <h3 class="text-4xl">Nowoczesna aranżacja Twojego ogrodu</h3>
           <p class="mt-11">
@@ -98,7 +99,7 @@
         <img src="./images/main.jpg" alt="" width="688" height="737" />
       </div>
       <!-- Second block variants -->
-      <div class="container bg-almostWhite max-w-none p-4">
+      <div class="container bg-almostWhite max-w-none p-4" id="oferta">
         <div class="p-8 md:p-32 max-w-5xl">
           <p class="text-xs text-green">oferta</p>
           <h3 class="text-3xl mt-4 mb-8">Działamy <i>kompleksowo</i></h3>
@@ -264,7 +265,7 @@
       </div>
 
       <!-- Forth block portfolio -->
-      <div class="bg-pink">
+      <div class="bg-pink" id="realisation">
         <div class="container max-w-none p-8 md:py-24">
           <p class="text-xs text-green">Realizacje</p>
           <h3 class="text-3xl">Nasze <i>projekty</i></h3>
@@ -310,7 +311,7 @@
         </div>
       </div>
       <!-- 5th block instagram -->
-      <div class="bg-almostWhite md:px-52 md:py-14">
+      <div class="bg-almostWhite md:px-52 md:py-14" id="contact">
         <div
           class="p-8 bg-green md:px-28 md:py-32 flex justify-between text-white flex-wrap"
         >
@@ -361,8 +362,14 @@
             <li><a class="mr-12 text-xs" href="">LinkedIn</a></li>
           </ul>
           <ul class="flex">
-            <li><a class="mr-12 text-xs" href="">000-000-000</a></li>
-            <li><a class="text-xs" href="">giarddesign@kontakt.pl</a></li>
+            <li>
+              <a class="mr-12 text-xs" href="tel:+000-000-000">000-000-000</a>
+            </li>
+            <li>
+              <a class="text-xs" href="mailto:giarddesign@kontakt.pl"
+                >giarddesign@kontakt.pl</a
+              >
+            </li>
           </ul>
         </div>
       </div>

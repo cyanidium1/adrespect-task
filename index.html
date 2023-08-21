@@ -24,6 +24,24 @@
     <header
       class="fixed top-0 container max-w-none py-7 flex justify-between m-0 bg-white z-10"
     >
+      <div
+        style="display: none"
+        id="backdrop"
+        class="absolute backdrop-blur-sm w-screen h-screen z-20 top-0 left-0 bg-gray-500/40"
+      >
+        <div
+          id="search"
+          class="absolute left-1/2 top-1/2 translate-x-[-50%] flex flex-col"
+        >
+          <input class="rounded-full px-6 py-3" type="text" />
+          <button
+            id="searchBtn"
+            class="mt-4 rounded-full bg-green px-6 py-3 text-white duration-300 hover:bg-lime-800"
+          >
+            search!
+          </button>
+        </div>
+      </div>
       <img src="./images/giarddesign.svg" alt="gd-logo" />
       <ul class="hidden justify-between space-x-12 md:flex">
         <li><a class="hover:text-green" href="#oferta">Oferta</a></li>
@@ -31,9 +49,9 @@
         <li><a class="hover:text-green" href="#realisation">Realizacje</a></li>
         <li><a class="hover:text-green" href="#contact">Kontakt</a></li>
         <li>
-          <a href="">
+          <button id="openSearch">
             <img src="./images/lookingglass.svg" alt="Search" srcset="" />
-          </a>
+          </button>
         </li>
       </ul>
       <!-- Mobile menu -->
@@ -43,16 +61,10 @@
           <li class="m-1 text-2xl"><a href="#about">O firmie</a></li>
           <li class="m-1 text-2xl"><a href="#realisation">Realizacje</a></li>
           <li class="m-1 text-2xl"><a href="#contact">Kontakt</a></li>
-
           <li class="m-1">
-            <a href="">
-              <img
-                src="./images/lookingglass.svg"
-                alt="Search"
-                srcset=""
-                width="24"
-              />
-            </a>
+            <button id="openSearchMob">
+              <img src="./images/lookingglass.svg" alt="Search" width="24" />
+            </button>
           </li>
         </ul>
       </div>

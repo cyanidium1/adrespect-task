@@ -37,3 +37,40 @@ function toggleBackdrop() {
     ? (backdrop.style.display = "block")
     : (backdrop.style.display = "none");
 }
+
+// slider
+
+// const images = [
+//   "/images/main.jpg",
+//   "/images/Photo-2.jpg",
+//   "/images/Photo-3.jpg",
+// ];
+
+const sliderImage = document.getElementById("sliderImage");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const images = [
+  "/images/main.jpg",
+  "/images/Photo-2.jpg",
+  "/images/Photo-3.jpg",
+];
+let currentIndex = 0;
+
+function updateImage() {
+  sliderImage.src = images[currentIndex];
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateImage();
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateImage();
+}
+
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+
+updateImage();

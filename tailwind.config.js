@@ -3,6 +3,10 @@ module.exports = {
   content: ["./**/*.{html, js}"],
   darkMode: "class",
   theme: {
+    screens: {
+      sm: "480px",
+      md: "1028px",
+    },
     container: {
       padding: "90px",
     },

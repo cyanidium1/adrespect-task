@@ -17,7 +17,10 @@
       sizes="32x32"
     />
   </head>
-  <body class="dark:bg-slate-900" style="font-family: 'Inter', sans-serif">
+  <body
+    class="font-light dark:bg-slate-900"
+    style="font-family: 'Inter', sans-serif"
+  >
     <header class="container max-w-none py-7 flex justify-between m-0">
       <img src="../images/giarddesign.svg" alt="gd-logo" />
       <ul class="flex justify-between space-x-12">
@@ -25,7 +28,11 @@
         <li><a href="">O firmie</a></li>
         <li><a href="">Realizacje</a></li>
         <li><a href="">Kontakt</a></li>
-        <li><a href="">Delete</a></li>
+        <li>
+          <a href="">
+            <img src="../images/lookingglass.svg" alt="Search" srcset="" />
+          </a>
+        </li>
       </ul>
     </header>
     <main>
@@ -42,7 +49,9 @@
             <a class="rounded-full bg-green px-6 py-3 text-white" href=""
               >Skontaktuj się z nami</a
             >
-            <a class="rounded-full bg-green px-6 py-3 text-white" href=""
+            <a
+              class="rounded-full border-[1px] border-green text-green px-6 py-3"
+              href=""
               >Zobacz nasze realizacje</a
             >
           </div>
@@ -51,9 +60,9 @@
       </div>
       <!-- Second block variants -->
       <div class="container bg-almostWhite max-w-none">
-        <div class="px-32 py-32">
+        <div class="px-32 py-32 max-w-5xl">
           <p class="text-xs text-green">oferta</p>
-          <h3 class="text-3xl">Działamy <i>kompleksowo</i></h3>
+          <h3 class="text-3xl mt-4 mb-8">Działamy <i>kompleksowo</i></h3>
           <p class="text-xl">
             Oferujemy kompletną obsługę inwestycji terenów zielonych.
             Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
@@ -181,8 +190,11 @@
         />
         <div class="bg-green p-32 text-white">
           <p class="text-xs">O firmie</p>
-          <h3 class="text-3xl">Tworzymy z <i>pasją</i></h3>
-          <p class="text-xl">
+          <h3 class="text-3xl mb-10 mt-4 font-normal">
+            Tworzymy z <br />
+            <i>pasją</i>
+          </h3>
+          <p class="text-xl leading-7">
             Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
             wykwalifikowani projektanci oraz architekci, których zadaniem jest
             rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
@@ -190,19 +202,21 @@
             minimalizm, geometria i elegancka prostota. Tworzymy ogrody
             małoobsługowe, dostosowane do współczesnego trybu życia.
           </p>
-          <a class="text-xl" href=""
-            >Poznaj nas bliżej
+          <a
+            class="flex items-center mt-[72px] px-5 py-3 text-xl rounded-full text-white border-[1px] border-white w-fit space-x-2"
+            href=""
+            ><p>Poznaj nas bliżej</p>
 
             <svg
               width="16"
               height="16"
               viewBox="0 0 16 16"
-              fill="none"
+              fill="white"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
-                fill="#1B5B31"
+                fill="#ffffff"
               />
             </svg>
           </a>
@@ -215,7 +229,30 @@
           <p class="text-xs text-green">Realizacje</p>
           <h3 class="text-3xl">Nasze <i>projekty</i></h3>
         </div>
-        <div class="flex justify-between w-full">
+        <div class="flex justify-between w-full relative">
+          <div
+            class="bg-gradient-to-b from-transparent to-pink absolute w-full h-full"
+          ></div>
+          <button
+            class="flex items-center px-5 py-3 text-xl rounded-full text-black border-[1px] border-black w-fit space-x-2 absolute bottom-[90px] text-center left-[50%] translate-x-[-50%]"
+            href=""
+          >
+            <p>Rozwiń</p>
+
+            <svg
+              class="rotate-90"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                fill="black"
+              />
+            </svg>
+          </button>
           <div>
             <img class="my-11" src="../images/Photo-8.jpg" alt="Photo-1" />
             <img class="my-11" src="../images/Photo-5.jpg" alt="Photo-2" />
